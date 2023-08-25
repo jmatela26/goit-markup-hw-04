@@ -4,6 +4,7 @@
   --iris: #4d5ae5;
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
+  --grey: rgba(46, 47, 66, 0.70);
 }
 
 /* Standard Body CSS */
@@ -130,11 +131,23 @@ button {
 }
 
 .hero-section {
-  background-color: var(--navyblue);
   color: var(--white);
   text-align: center;
   padding-top: 184px;
   padding-bottom: 184px;
+  background-image: linear-gradient( to right, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: 1440px;
+  background-position: center;
+}
+
+.hero-bg-color {
+  display: block;
+  margin: auto;
+  max-width: 1440px;
+  text-align: center;
+  height: 600px;
+  background-color: var(--grey);
 }
 
 .hero-section h1 {
@@ -184,6 +197,37 @@ button {
   line-height: 1.5;
   /* 150% */
   letter-spacing: 0.32px;
+}
+
+/* Feature Section Icons */
+.feature-items.list.feature-icon-antenna::before,
+.feature-items.list.feature-icon-clock::before,
+.feature-items.list.feature-icon-diagram::before,
+.feature-items.list.feature-icon-astronaut::before {
+  content: '';
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-color: var(--cloud);
+  background-position: center;
+}
+
+.feature-items.list.feature-icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.feature-items.list.feature-icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.feature-items.list.feature-icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.feature-items.list.feature-icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .values-list {
@@ -249,6 +293,15 @@ button {
   padding-bottom: 30px;
 }
 
+.client-section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -287,6 +340,8 @@ button {
 .btn-filter:focus {
   background-color: var(--iris);
   color: var(--white);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .filter-buttons {

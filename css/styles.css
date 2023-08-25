@@ -318,12 +318,14 @@ button {
   fill: var(--iconcolor);
 }
 
-.client-icon:hover,
-.client-icon:hover,
 .client-link:hover, 
 .client-link:focus {
   fill: var(--navyblue);
   border-color: var(--navyblue);
+}
+
+.client-link:hover svg, .client-link:focus svg {
+  fill: var(--navyblue);
 }
 
 .client-section-title {

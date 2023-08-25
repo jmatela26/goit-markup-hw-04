@@ -282,6 +282,10 @@ button {
   margin-bottom: 50px;
 }
 
+.our-team-description {
+  margin-bottom: 10px;
+}
+
 .our-team-name {
   margin-bottom: 10px;
   font-weight: 500;
@@ -292,6 +296,39 @@ button {
 .our-team-item-name {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team-social-media-link {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.team-social-list {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+}
+
+.team-social-media-link:hover,
+.team-social-media-link:focus {
+  background-color: var(--iris);
+  fill: var(--white);
+}
+
+.team-social-media-link:hover svg, 
+.team-social-media-link:focus svg {
+  fill: var(--white);
+}
+
+.team-social-media-icon-svg {
+  fill: var(--iconcolor);
 }
 
 .client-list {
@@ -324,7 +361,8 @@ button {
   border-color: var(--navyblue);
 }
 
-.client-link:hover svg, .client-link:focus svg {
+.client-link:hover svg, 
+.client-link:focus svg {
   fill: var(--navyblue);
 }
 
@@ -474,6 +512,12 @@ button {
 
 .footer-division {
   display: flex;
+}
+
+.social-media-link:hover, 
+.social-media-link:focus {
+  color: var(--white);
+  background-color: var(--iris);
 }
 
 .footer-link {

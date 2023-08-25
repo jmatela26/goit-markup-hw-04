@@ -439,6 +439,43 @@ button {
 }
 
 /* footer */
+.social-media-list {
+  display: flex;
+  padding: 0;
+  gap: 16px;
+}
+
+.social-media {
+  margin-left: 70px;
+}
+
+.social-media-link {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-media-title {
+  font-family: inherit;
+  font-size: 16px;
+  font-style: inherit;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.social-media-icon-svg {
+  fill: var(--white);
+}
+
+.footer-division {
+  display: flex;
+}
+
 .footer-link {
   display: block;
   margin-bottom: 20px;

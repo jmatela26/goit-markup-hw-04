@@ -5,6 +5,7 @@
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
   --grey: rgba(46, 47, 66, 0.70);
+  --iconcolor: #afb1b8;
 }
 
 /* Standard Body CSS */
@@ -291,6 +292,38 @@ button {
 .our-team-item-name {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.client-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4%;
+  border: 1px solid var(--iconcolor);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.client-icon {
+  fill: var(--iconcolor);
+}
+
+.client-icon:hover,
+.client-icon:hover,
+.client-link:hover, 
+.client-link:focus {
+  fill: var(--navyblue);
+  border-color: var(--navyblue);
 }
 
 .client-section-title {

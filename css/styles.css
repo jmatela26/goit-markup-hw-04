@@ -229,7 +229,7 @@ button {
 .values-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 30px;
   padding: 0;
 }
 

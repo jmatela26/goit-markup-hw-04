@@ -2,10 +2,12 @@
   --navyblue: #2e2f42;
   --white: #ffffff;
   --iris: #4d5ae5;
+  --ocean: #404bbf;
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
   --grey: rgba(46, 47, 66, 0.70);
   --iconcolor: #afb1b8;
+  --green: #31d0aa
 }
 
 /* Standard Body CSS */
@@ -163,8 +165,8 @@ button {
 }
 
 .hero-button:hover {
-  background-color: var(--white);
-  color: var(--iris);
+  background-color: var(--ocean);
+  color: var(--white);
 }
 
 .feature-section-list {
@@ -299,7 +301,7 @@ button {
   width: var(--diameter);
   height: var(--diameter);
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--iris);
 }
 
 .team-social-list {
@@ -312,17 +314,11 @@ button {
 
 .team-social-media-link:hover,
 .team-social-media-link:focus {
-  background-color: var(--iris);
-  fill: var(--white);
-}
-
-.team-social-media-link:hover svg, 
-.team-social-media-link:focus svg {
-  fill: var(--white);
+  background-color: var(--ocean);
 }
 
 .team-social-media-icon-svg {
-  fill: var(--iconcolor);
+  fill: var(--white);
 }
 
 .client-list {
@@ -351,13 +347,13 @@ button {
 
 .client-link:hover, 
 .client-link:focus {
-  fill: var(--navyblue);
-  border-color: var(--navyblue);
+  fill: var(--iris);
+  border-color: var(--iris);
 }
 
 .client-link:hover svg, 
 .client-link:focus svg {
-  fill: var(--navyblue);
+  fill: var(--iris);
 }
 
 .client-section-title {
@@ -489,7 +485,7 @@ button {
     width: var(--diameter);
     height: var(--diameter);
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--iris);
 }
 
 .social-media-title {
@@ -512,7 +508,7 @@ button {
 .social-media-link:hover, 
 .social-media-link:focus {
   color: var(--white);
-  background-color: var(--iris);
+  background-color: var(--green);
 }
 
 .footer-link {
